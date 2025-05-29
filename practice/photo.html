@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轮播图</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .luobo {
+            width: 800px;
+            height: 400px;
+            overflow: hidden;
+            border: 2px solid #ccc;
+            position: relative;
+            margin-top: 350px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .list {
+            width: 3200px;
+            height: 400px;
+            display: flex;
+            transition: margin-left 1s ease; /* 平滑过渡效果 */
+            position: relative; 
+        }
+
+        .list li img {
+            width: 800px;
+            height: 400px;
+        }
+
+        .list li {
+            list-style: none;
+        }
+
+        .btn {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            width: 40px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 24px;
+            user-select: none;
+            z-index: 10;
+        }
+
+        .btn-left {
+            left: 10px;
+        }
+
+        .btn-right {
+            right: 10px;
+        }
+
+        .pagination {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            list-style: none;
+        }
+
+        .pagination li {
+            width: 10px;
+            height: 10px;
+            background-color: gray;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .pagination .active {
+            background-color: white; /* 激活的分页点为白色 */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="luobo">
+        <ul class="list">
+            <li><img src="4.jpg" alt=""></li>
+            <li><img src="1.jpg" alt=""></li>
+            <li><img src="2.jpg" alt=""></li>
+            <li><img src="3.jpg" alt=""></li>
+            <li><img src="4.jpg" alt=""></li>
+            <li><img src="1.jpg" alt=""></li>
+
+
+
+        </ul>
+        <div class="btn btn-left">《</div> 
+        <div class="btn btn-right">》</div> 
+
+        <ul class="pagination">
+       
+        </ul>
+    </div>
+
+    <script>
+        const list = document.querySelector('.list');
+        const slides = document.querySelectorAll('.list li');
+        const pagination = document.querySelector('.pagination');
+        const totalRealSlides = 4; // 实际幻灯片数量（1,2,3,4）
+        let currentIndex = 1; // 初始位置（因为第一个是克隆的）
+        const slideWidth = 800;
+        let timer;
+
+        // 生成分页点（只生成实际幻灯片数量的分页点）
+        for (let i = 0; i < totalRealSlides; i++) {
+            const dot = document.createElement('li');
+            if (i === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => goToSlide(i));
+            pagination.appendChild(dot);
+        }
+
+        // 更新分页点状态
+        function updatePagination() {
+            const dots = document.querySelectorAll('.pagination li');
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === (currentIndex - 1) % totalRealSlides);
+            });
+        }
+
+        // 跳转到指定幻灯片
+        function goToSlide(index) {
+            currentIndex = index + 1; // +1 因为第一个是克隆的
+            list.style.transition = 'margin-left 1s ease';
+            list.style.marginLeft = `-${currentIndex * slideWidth}px`;
+            updatePagination();
+        }
+
+        // 下一张
+        function nextSlide() {
+            currentIndex++;
+            list.style.transition = 'margin-left 1s ease';
+            list.style.marginLeft = `-${currentIndex * slideWidth}px`;
+
+            // 如果到达最后一个克隆，无动画跳转回真实的第一张
+            if (currentIndex === slides.length - 1) {
+                setTimeout(() => {
+                    list.style.transition = 'none';
+                    currentIndex = 1;
+                    list.style.marginLeft = `-${currentIndex * slideWidth}px`;
+                }, 1000);
+            }
+            updatePagination();
+        }
+
+        // 上一张
+        function prevSlide() {
+            currentIndex--;
+            list.style.transition = 'margin-left 1s ease';
+            list.style.marginLeft = `-${currentIndex * slideWidth}px`;
+
+            // 如果到达第一个克隆，无动画跳转回真实的最后一张
+            if (currentIndex === 0) {
+                setTimeout(() => {
+                    list.style.transition = 'none';
+                    currentIndex = totalRealSlides;
+                    list.style.marginLeft = `-${currentIndex * slideWidth}px`;
+                }, 1000);
+            }
+            updatePagination();
+        }
+
+        // 按钮事件
+        document.querySelector('.btn-left').addEventListener('click', prevSlide);
+        document.querySelector('.btn-right').addEventListener('click', nextSlide);
+
+       
+
+        // 初始化位置
+        list.style.marginLeft = `-${currentIndex * slideWidth}px`;
+
+        // 自动轮播
+        timer = setInterval(nextSlide, 5000);
+    </script>
+
+</body>
+</html>
