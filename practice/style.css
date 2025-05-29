@@ -1,0 +1,35 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* 设置盒子模型 */
+  
+}
+/* 设置导航栏的基础样式 */
+.navbar {
+  background-color: #333; /* 设置导航栏的背景色 */
+  overflow: hidden; /* 清除浮动 */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+}
+
+/* 设置导航栏链接的样式 */
+.navbar a {
+  float:   left; 
+  display: block; /* 使链接成为块级元素 */
+  color: white; /* 设置文字颜色为白色 */
+  text-align: center; /* 文字居中 */
+  padding: 20px 80px; /* 内边距，让链接更大一些 */
+  text-decoration: none; 
+}
+
+/* 设置鼠标悬停时链接的背景色 */
+.navbar a:hover {
+  background-color: #a7a6a6; 
+  color: black; 
+}
+
+
+
+
+
