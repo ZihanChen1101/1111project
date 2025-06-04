@@ -79,6 +79,29 @@ function showSuggestions(query) {
 // 获取DOM元素
 const searchBox = document.getElementById('searchBox');
 const suggestionsList = document.getElementById('suggestionsList');
+const searchButton = document.getElementById('searchButton');
+
+// 搜索函数
+function performSearch() {
+    const query = searchBox.value;
+    if (query.trim() !== '') {
+        // 在这里添加实际的搜索逻辑
+        console.log('Searching for:', query);
+        alert('Searching for: ' + query);
+        
+        // 隐藏建议列表
+        suggestionsList.style.display = 'none';
+    }
+}
+
+// 为按钮添加点击事件
+searchButton.addEventListener('click', performSearch);
+// 为输入框添加回车键搜索
+searchBox.addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+        performSearch();
+    }
+});
 
 // 创建防抖处理后的搜索函数
 const debouncedShowSuggestions = debounce(function() {
