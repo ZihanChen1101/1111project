@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>姜子牙</title>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     
+}
+    
+body {
+    font-family: "Segoe UI", "Microsoft YaHei", "Arial", sans-serif;
+    background: 
+        linear-gradient(rgba(245, 247, 250, 0.7), rgba(245, 247, 250, 0.7)),
+        url(背景图.png) no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+.work-detail-header {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  padding: 1.5rem 2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 10;
+}
+
+.back-home {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #e2e8f0;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  transition: all 0.2s ease;
+}
+
+.back-home:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateX(-2px);
+}
+
+.back-home svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.work-title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.work-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 60%;
+  width: 3px;
+  background: linear-gradient(to bottom, #3b82f6, #8b5cf6);
+  border-radius: 3px;
+}
+.picture {
+    margin: 0 auto;
+    text-align: center;
+    WIDTH: 100%;
+    max-width: 800px;
+    margin-top: 50px;
+}
+.picture img {
+    border: #e2e8f0 solid 1px;
+    border-radius: 24px;
+    height: 500px;
+    box-shadow: 0 4px 6px 6px rgba(0, 0, 0, 0.1);
+}
+.work-content-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.work-main-title {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.work-main-title h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.title-divider {
+  height: 3px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  border-radius: 3px;
+}
+
+.work-description {
+  line-height: 1.8;
+  color: #334155;
+}
+
+.work-description h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 1.5rem 0 1rem;
+  padding-left: 0.5rem;
+  border-left: 3px solid #3b82f6;
+}
+
+.work-description p {
+  margin-bottom: 1rem;
+  text-align: justify;
+  hyphens: auto;
+}
+
+@media (max-width: 768px) {
+  .work-content-container {
+    padding: 0 1rem;
+  }
+  
+  .work-main-title h2 {
+    font-size: 1.75rem;
+  }
+  
+  .title-divider {
+    max-width: 200px;
+  }
+}
+
+/* 页脚版权区 */
+.site-footer {
+    background: linear-gradient(to right, #3b82f6, #8b5cf6);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 12px 12px 0 0;
+    margin-top: 80px;
+}
+
+.footer-info p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-links a {
+    margin: 0 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: text-decoration 0.2s;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+</style>
+<body>
+<div class="work-detail-header" target="_self">
+  <a href="/" class="back-home">
+    <svg xmlns=index.html width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M19 12H5M12 19l-7-7 7-7"/>
+    </svg>
+    返回主页
+  </a>
+  <h1 class="work-title">《姜子牙》详情</h1>
+</div>
+<div class="picture">
+    <img src="姜子牙.jpg" alt="姜子牙">
+</div>
+<div class="work-content-container">
+  <!-- 作品标题区域 -->
+  <div class="work-main-title">
+    <h2>姜子牙</h2>
+    <div class="title-divider"></div>
+  </div>
+  
+  <!-- 作品描述区域 -->
+  <div class="work-description">
+       <h3>剧情简介</h3>
+    <p>昆仑弟子姜子牙，率领众神在封神大战时捉拿了九尾妖狐“苏妲己”，战胜狐妖，推翻了残暴的商王朝，赢得封神大战的胜利，原本他能即将受封为众神之长，以此飞黄腾达。但就在巅峰时刻斩首九尾妖狐时，姜子牙发现她体内有一个无辜女孩元神，从而软下心肠，因一时之过被贬下凡间，失去神力，被世人唾弃。元始天尊给到的说法是姜子牙受狐妖蛊惑，于是把姜子牙下放到北海反省悔悟，直到悟出真谛才能回来做仙。一晃姜子牙在北海钓鱼十年，在某日突然遇见当年狐妖抓的那位无辜女孩小九，于是两人不打不相识，并为了找到所有事情真相，姜子牙重新找到了自我，跟随小九，一起去找小九父亲，但却挖出了尘封已久的惊天秘密，而这个秘密涉及到了元始天尊</p>
+    
+    <h3>创作背景</h3>
+    <p>《姜子牙》是动画制作团队历时四年打磨的作品，在细节上，为追求影片画面的质感以及画风的协调性，制作团队花费重金聘请专业人士，对片中所有材质均创新性采用手绘方式绘制。片中严格考究中国元素，通过翻阅《封神演义》《山海经》、参考3000年出土的文物来对花纹、法术等进行设计，力图呈现真实可信的封神世界</p>
+    
+ 
+    <h3>影片风格</h3>
+    <p>全片色彩构成，主要分为红、白、蓝等三种。红蓝对比，是电影美术中常见的对立属性色彩关系，而白色作为光谱中的全色，意味着无边界及包容。红色代表的羁绊、宿命、战争，从视觉刺激和“形”的层面偏重写实，而蓝色代表的飞升、解脱、宁静，更具虚空的“意”的味道。红色符号，包括两种形态的宿命锁、九尾和小九的角色主色、片头封神大战的血色等；蓝色符号，包括玄鸟、姜子牙悟道前的角色主色，以及各种神力释放时的技能色等。在红蓝对比之间，起到平衡作用的关键正是白色，白色也是虚实相生、角色悟道和主题升华的标志。例如，姜子牙北境修行、姜子牙悟道斩天梯、师尊和四不相的角色主色等。</p>
+
+  </div>
+</div>
+    <footer class="site-footer">
+  <div class="footer-info">
+    <p>© 2025 中国动漫综合服务平台 版权所有</p>
+  </div>
+  <div class="footer-links">
+    <a href="#">关于我们</a>
+    <a href="#">联系我们</a>
+    <a href="#">加入我们</a>
+  </div>
+</footer>
+
+
+
+
+    
+</body>
+</html>

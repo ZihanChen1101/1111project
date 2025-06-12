@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>时光代理人</title>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     
+}
+    
+body {
+    font-family: "Segoe UI", "Microsoft YaHei", "Arial", sans-serif;
+    background: 
+        linear-gradient(rgba(245, 247, 250, 0.7), rgba(245, 247, 250, 0.7)),
+        url(背景图.png) no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+.work-detail-header {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  padding: 1.5rem 2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 10;
+}
+
+.back-home {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #e2e8f0;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  transition: all 0.2s ease;
+}
+
+.back-home:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateX(-2px);
+}
+
+.back-home svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.work-title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.work-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 60%;
+  width: 3px;
+  background: linear-gradient(to bottom, #3b82f6, #8b5cf6);
+  border-radius: 3px;
+}
+.picture {
+    margin: 0 auto;
+    text-align: center;
+    WIDTH: 100%;
+    max-width: 800px;
+    margin-top: 50px;
+}
+.picture img {
+    border: #e2e8f0 solid 1px;
+    border-radius: 24px;
+    height: 500px;
+    box-shadow: 0 4px 6px 6px rgba(0, 0, 0, 0.1);
+}
+.work-content-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.work-main-title {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.work-main-title h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.title-divider {
+  height: 3px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  border-radius: 3px;
+}
+
+.work-description {
+  line-height: 1.8;
+  color: #334155;
+}
+
+.work-description h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 1.5rem 0 1rem;
+  padding-left: 0.5rem;
+  border-left: 3px solid #3b82f6;
+}
+
+.work-description p {
+  margin-bottom: 1rem;
+  text-align: justify;
+  hyphens: auto;
+}
+
+@media (max-width: 768px) {
+  .work-content-container {
+    padding: 0 1rem;
+  }
+  
+  .work-main-title h2 {
+    font-size: 1.75rem;
+  }
+  
+  .title-divider {
+    max-width: 200px;
+  }
+}
+
+/* 页脚版权区 */
+.site-footer {
+    background: linear-gradient(to right, #3b82f6, #8b5cf6);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 12px 12px 0 0;
+    margin-top: 80px;
+}
+
+.footer-info p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-links a {
+    margin: 0 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: text-decoration 0.2s;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+</style>
+<body>
+<div class="work-detail-header" target="_self">
+  <a href="/" class="back-home">
+    <svg xmlns=index.html width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M19 12H5M12 19l-7-7 7-7"/>
+    </svg>
+    返回主页
+  </a>
+  <h1 class="work-title">《时光代理人》详情</h1>
+</div>
+<div class="picture">
+    <img src="时光代理人.jpg" alt="时光代理人">
+</div>
+<div class="work-content-container">
+  <!-- 作品标题区域 -->
+  <div class="work-main-title">
+    <h2>深海</h2>
+    <div class="title-divider"></div>
+  </div>
+  
+  <!-- 作品描述区域 -->
+  <div class="work-description">
+       <h3>剧情简介</h3>
+    <p>在繁华都市的某个角落，有一家叫做“时光照相馆”的小店还在照常营业。虽然门庭冷落，但它背后其实由两个具有特殊能力的男人——程小时和陆光经营着。为了完成顾客的委托，陆光和程小时组队配合使用超能力进入照片，然而事情的发展却没能按他们所想的那样……</p>
+    
+    <h3>创作背景</h3>
+    <p>《时光代理人》于2019年底开始了剧本创作，最早的思维源头其实就是单纯的想要回到过去的照片，为了使得剧情更加跌宕起伏，导演将能力拆成两份，创造出将程小时和陆光及他们的能力。而乔苓的设计是为了增加女性伙伴特有的视角和行为。《时光代理人》中的部分角色是有原型参考的。第八集出场的董易的名字及造型出自《百妖谱》系列导演董易，剧情灵感来源则是董易常去同济大学讲课，于是将校园作为情节展开点。番外篇的故事灵感来源于“包办婚姻导致悲剧”的报道，名字则取自大学好友、四年同窗同寝的欧阳时堃导演和刘思文导演。梅姨也是根据新闻媒体等报道中取材进行改编创作的。原《净化法则》打算直切主线，但《时光代理人》考虑用主线中穿插单元剧的模式，以平衡现实主义和人文情怀</p>
+    
+ 
+    <h3>影片风格</h3>
+    <p>《时光代理人》的美术风格让人眼前一亮，画面清新恬淡，城市与乡村都有水彩画的淡雅，空间纵深并不刻板，人物设计新颖时尚，画面巧妙运用光与影的对比和基调和谐的色彩搭配，恰到好处地展现人物的心理与情绪。这部作品是当下动画市场中少见的紧紧贴近现实生活题材的作品，故事叙事技巧繁复，“戏中戏”的设计和“三一律”的方法有让它看来严整规范。尽管动画作品在故事处理上不乏有理想主义和为剧情服务的情况，但瑕不掩瑜，一部反映当下中国社会生活的作品是难能可贵的，它在形式与叙事上探索了现实类题材作品在观众与市场中的接受度，在大量神话或古典幻想类题材动画作品中极具辨识度。故事里那些细碎平凡的情感组成的珍贵时光，让生命中的遗憾变得沉重，而爱的力量却能将这份沉重托起，给人以继续前行的力量</p>
+
+  </div>
+</div>
+    <footer class="site-footer">
+  <div class="footer-info">
+    <p>© 2025 中国动漫综合服务平台 版权所有</p>
+  </div>
+  <div class="footer-links">
+    <a href="#">关于我们</a>
+    <a href="#">联系我们</a>
+    <a href="#">加入我们</a>
+  </div>
+</footer>
+
+
+
+
+    
+</body>
+</html>

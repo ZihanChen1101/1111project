@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大圣归来</title>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     
+}
+    
+body {
+    font-family: "Segoe UI", "Microsoft YaHei", "Arial", sans-serif;
+    background: 
+        linear-gradient(rgba(245, 247, 250, 0.7), rgba(245, 247, 250, 0.7)),
+        url(背景图.png) no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+.work-detail-header {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  padding: 1.5rem 2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 10;
+}
+
+.back-home {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #e2e8f0;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  transition: all 0.2s ease;
+}
+
+.back-home:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateX(-2px);
+}
+
+.back-home svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.work-title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.work-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 60%;
+  width: 3px;
+  background: linear-gradient(to bottom, #3b82f6, #8b5cf6);
+  border-radius: 3px;
+}
+.picture {
+    margin: 0 auto;
+    text-align: center;
+    WIDTH: 100%;
+    max-width: 800px;
+    margin-top: 50px;
+}
+.picture img {
+    border: #e2e8f0 solid 1px;
+    border-radius: 24px;
+    height: 500px;
+    box-shadow: 0 4px 6px 6px rgba(0, 0, 0, 0.1);
+}
+.work-content-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.work-main-title {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.work-main-title h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.title-divider {
+  height: 3px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  border-radius: 3px;
+}
+
+.work-description {
+  line-height: 1.8;
+  color: #334155;
+}
+
+.work-description h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 1.5rem 0 1rem;
+  padding-left: 0.5rem;
+  border-left: 3px solid #3b82f6;
+}
+
+.work-description p {
+  margin-bottom: 1rem;
+  text-align: justify;
+  hyphens: auto;
+}
+
+@media (max-width: 768px) {
+  .work-content-container {
+    padding: 0 1rem;
+  }
+  
+  .work-main-title h2 {
+    font-size: 1.75rem;
+  }
+  
+  .title-divider {
+    max-width: 200px;
+  }
+}
+
+/* 页脚版权区 */
+.site-footer {
+    background: linear-gradient(to right, #3b82f6, #8b5cf6);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 12px 12px 0 0;
+    margin-top: 80px;
+}
+
+.footer-info p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-links a {
+    margin: 0 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: text-decoration 0.2s;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+</style>
+<body>
+<div class="work-detail-header" target="_self">
+  <a href="/" class="back-home">
+    <svg xmlns=index.html width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M19 12H5M12 19l-7-7 7-7"/>
+    </svg>
+    返回主页
+  </a>
+  <h1 class="work-title">《大圣归来》详情</h1>
+</div>
+<div class="picture">
+    <img src="大圣归来.jpg" alt="大圣归来">
+</div>
+<div class="work-content-container">
+  <!-- 作品标题区域 -->
+  <div class="work-main-title">
+    <h2>大圣归来</h2>
+    <div class="title-divider"></div>
+  </div>
+  
+  <!-- 作品描述区域 -->
+  <div class="work-description">
+       <h3>剧情简介</h3>
+    <p>大闹天宫后四百多年，齐天大圣成了一个传说，在山妖横行的长安城，孤儿江流儿与行脚僧法明相依为命，小小少年常常神往大闹天宫的孙悟空。有一天，山妖来劫掠童男童女，江流儿救了一个小女孩，惹得山妖追杀，他一路逃跑，跑进了五行山，盲打误撞地解除了孙悟空的封印。悟空自由之后只想回花果山，却无奈腕上封印未解，又欠江流儿人情，勉强地护送他回长安城。一路上八戒和白龙马也因缘际化地现身，但或落魄或魔性大发，英雄不再。妖王为抢女童，布下夜店迷局，却发现悟空法力尽失，轻而易举地抓走了女童。悟空不愿再去救女童，江流儿决定自己去救。日全食之日，在悬空寺，妖王准备将童男童女投入丹炉中，江流儿却冲进了道场，最后一战开始了</p>
+    
+    <h3>创作背景</h3>
+    <p>整部影片经历了8年的酝酿，3年的制作。影片的世界观是架构在《西游记》小说原著的基础之上，根据中国传统神话故事，进行了新的拓展和演绎</p>
+    
+ 
+    <h3>影片风格</h3>
+    <p>影片用好莱坞熟悉的公路片方式来讲故事，贯穿多变宏大的场景，技术上采用全景3D搭建，从大场面到一草一木都有原型，既有《阿凡达》式的魔幻森林，又有《指环王》般的天宫与魔堡，将民风彪悍的长安城、大佛林立的五行山山洞、妖气缭绕的悬空寺等等表现得丰富精细、纹理可靠。除此之外，影片在3D动画技术中巧妙融合了东方美学取法大自然的淡彩风韵，如市井街头皮影戏、屋角一枝梅的烟雨、大桃树下红扑扑的果实，石拱桥上的暴雨将至，山前江畔的帆船，以及大BOSS的书生造型</p>
+
+  </div>
+</div>
+    <footer class="site-footer">
+  <div class="footer-info">
+    <p>© 2025 中国动漫综合服务平台 版权所有</p>
+  </div>
+  <div class="footer-links">
+    <a href="#">关于我们</a>
+    <a href="#">联系我们</a>
+    <a href="#">加入我们</a>
+  </div>
+</footer>
+
+
+
+
+    
+</body>
+</html>

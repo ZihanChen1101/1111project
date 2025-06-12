@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文化推广页面</title>
+    <style>
+        /* 全局样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* 顶部区域 */
+        .header {
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            padding: 1.5rem 2rem;
+            color: white;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+        }
+        
+        .header h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .back-home {
+            position: absolute;
+            left: 2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 0.375rem;
+            transition: all 0.2s ease;
+        }
+        
+        .back-home:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        .back-home svg {
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+        
+        /* 主体内容区 */
+        .header-title {
+            font-size: 30px;
+            font-weight: 600;
+        }
+        .main-content {
+            flex: 1;
+            max-width: 900px;
+            width: 100%;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        
+        .section-title {
+            margin: 2rem 0 1.5rem;
+            text-align: center;
+        }
+        
+        .section-title h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 0.75rem;
+        }
+        .news-date {
+                font-size: 14px;
+    color: #999;
+    margin-bottom: 8px;
+        }
+        
+        .title-divider {
+            height: 3px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            width: 80%;
+            max-width: 400px;
+            margin: 0 auto;
+            border-radius: 3px;
+        }
+        
+        .content-text {
+            line-height: 1.8;
+            color: #334155;
+            margin-bottom: 2rem;
+            margin-top: 50px;
+        }
+        
+        .content-text p {
+            margin-bottom: 1rem;
+            text-align: justify;
+            hyphens: auto;
+        }
+        
+        /* 底部区域 */
+        .footer {
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            color: #e2e8f0;
+            padding: 2rem 1.5rem;
+            text-align: center;
+        }
+        
+        .copyright {
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        
+        .footer-link {
+            color: #e2e8f0;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s ease;
+        }
+        
+        .footer-link:hover {
+            color: #3b82f6;
+            text-decoration: underline;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.5rem;
+                padding: 0 3rem;
+            }
+            
+            .back-home {
+                padding: 0.5rem;
+                left: 1rem;
+            }
+            
+            .back-home span {
+                display: none;
+            }
+            
+            .main-content {
+                padding: 0 1rem;
+            }
+            
+            .section-title h2 {
+                font-size: 1.3rem;
+            }
+            
+            .footer-links {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部区域 -->
+    <header class="header">
+        <a href="/" class="back-home">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+            </svg>
+            <span>返回主页</span>
+        </a>
+        <div class="header-title">中国动漫综合服务平台</div>
+    </header>
+    
+    <!-- 主体内容区 -->
+    <main class="main-content">
+        <div class="section-title">
+            <h2>咨询标题</h2>
+            <p class="news-date">时间1</p>
+            <div class="title-divider"></div>
+        </div>
+          
+
+        
+        <div class="content-text">
+            <p>近日，由文化和旅游部主办，中国动漫展览馆承办的"虚拟现实与文化和旅游深入融合高级研修班"在北京成功举办。本次研修班旨在推动虚拟现实技术在文化和旅游领域的创新应用，促进产业高质量发展。</p>
+            
+            <p>研修班邀请了来自高校、科研院所和行业领军企业的专家学者，围绕虚拟现实技术发展趋势、文化数字化保护与传承、智慧旅游应用等主题进行了深入研讨。参会学员包括全国各省市文化和旅游部门负责人、重点文化企业技术骨干等共计120余人。</p>
+            
+            <p>研修期间，学员们还参观了中国动漫展览馆最新推出的VR文化体验区，亲身感受了虚拟现实技术在文化展示、文物复原、非遗传承等方面的创新应用成果。</p>
+            
+            <p>本次研修班的举办，为文化和旅游行业从业人员提供了宝贵的学习交流平台，将进一步推动虚拟现实技术与文化和旅游产业的深度融合，助力数字文化经济建设。</p>
+        </div>
+    </main>
+    
+    <!-- 底部区域 -->
+    <footer class="footer">
+        <div class="copyright">◎ 2025 中国动漫展览馆 版权所有</div>
+        <div class="footer-links">
+            <a href="/about" class="footer-link">关于我们</a>
+            <a href="/contact" class="footer-link">联系我们</a>
+            <a href="/join" class="footer-link">加入我们</a>
+        </div>
+    </footer>
+</body>
+</html>

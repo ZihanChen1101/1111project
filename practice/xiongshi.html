@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雄狮少年</title>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     
+}
+    
+body {
+    font-family: "Segoe UI", "Microsoft YaHei", "Arial", sans-serif;
+    background: 
+        linear-gradient(rgba(245, 247, 250, 0.7), rgba(245, 247, 250, 0.7)),
+        url(背景图.png) no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+.work-detail-header {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  padding: 1.5rem 2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 10;
+}
+
+.back-home {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #e2e8f0;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  transition: all 0.2s ease;
+}
+
+.back-home:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateX(-2px);
+}
+
+.back-home svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.work-title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.work-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 60%;
+  width: 3px;
+  background: linear-gradient(to bottom, #3b82f6, #8b5cf6);
+  border-radius: 3px;
+}
+.picture {
+    margin: 0 auto;
+    text-align: center;
+    WIDTH: 100%;
+    max-width: 800px;
+    margin-top: 50px;
+}
+.picture img {
+    border: #e2e8f0 solid 1px;
+    border-radius: 24px;
+    height: 500px;
+    box-shadow: 0 4px 6px 6px rgba(0, 0, 0, 0.1);
+}
+.work-content-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.work-main-title {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.work-main-title h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.title-divider {
+  height: 3px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  border-radius: 3px;
+}
+
+.work-description {
+  line-height: 1.8;
+  color: #334155;
+}
+
+.work-description h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 1.5rem 0 1rem;
+  padding-left: 0.5rem;
+  border-left: 3px solid #3b82f6;
+}
+
+.work-description p {
+  margin-bottom: 1rem;
+  text-align: justify;
+  hyphens: auto;
+}
+
+@media (max-width: 768px) {
+  .work-content-container {
+    padding: 0 1rem;
+  }
+  
+  .work-main-title h2 {
+    font-size: 1.75rem;
+  }
+  
+  .title-divider {
+    max-width: 200px;
+  }
+}
+
+/* 页脚版权区 */
+.site-footer {
+    background: linear-gradient(to right, #3b82f6, #8b5cf6);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 12px 12px 0 0;
+    margin-top: 80px;
+}
+
+.footer-info p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-links a {
+    margin: 0 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: text-decoration 0.2s;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+</style>
+<body>
+<div class="work-detail-header" target="_self">
+  <a href="/" class="back-home">
+    <svg xmlns=index.html width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M19 12H5M12 19l-7-7 7-7"/>
+    </svg>
+    返回主页
+  </a>
+  <h1 class="work-title">《雄狮少年》详情</h1>
+</div>
+<div class="picture">
+    <img src="雄狮少年.jpg" alt="雄狮少年">
+</div>
+<div class="work-content-container">
+  <!-- 作品标题区域 -->
+  <div class="work-main-title">
+    <h2>雄狮少年</h2>
+    <div class="title-divider"></div>
+  </div>
+  
+  <!-- 作品描述区域 -->
+  <div class="work-description">
+       <h3>剧情简介</h3>
+    <p>阿娟一个人在城市生活。在一次机缘巧合下，得到与他同名少女的鼓励和启发，于是下定决心和好友阿猫、阿狗组成雄狮小队，想要打破现实桎梏，为自己而战一次。在送外卖途中，他遭遇了城市舞狮队员的奚落，但他始终记挂着师父讲过的话，心中鼓点响起，楼宇缝隙中阳光洒下，独自从暗夜舞到黎明的少年也终成“雄狮” 。同时三人相互扶持，一路跌跌撞撞，最终创造奇迹实现梦想</p>
+    
+    <h3>创作背景</h3>
+    <p>2019年8月，《雄狮少年》开始立项。当时导演孙海鹏没有剧本，只有三个关键词：舞狮、少年和热血。他曾想过可以制作体育题材的故事，但篮球、足球等诸如此类的影片已有不少，再去尝试便会沦为普通。而舞狮自带烟火气，在广州有着较好的传承。孙海鹏认为舞狮的造型非常好看，视觉效果会很有冲击力。狮鼓一敲，狮头舞动，会有种热血的感觉。并且如果用真人拍摄就不能做太夸张的动作</p>
+    
+ 
+    <h3>影片风格</h3>
+    <p>《雄狮少年》竭尽所能地为观众展现了符号化的岭南形象，无论是空中散落的木棉花，还是夕阳余晖下的桑基鱼塘，甚至舞狮的场景也复刻着黄飞鸿电影中人们熟悉的画面，在世界一流水平动画制作团队的精益求精下，连醒狮的鬃毛都在大银幕上栩栩如生。同时，五条人乐队和九连真人乐队颇具乡土特色的摇滚，也为这种符号化的认知辅之以音乐性的强调。影片以前无古人的挑战擎天柱为结尾，以最大化的情感宣泄达成了银幕内外观众的共鸣</p>
+
+  </div>
+</div>
+    <footer class="site-footer">
+  <div class="footer-info">
+    <p>© 2025 中国动漫综合服务平台 版权所有</p>
+  </div>
+  <div class="footer-links">
+    <a href="#">关于我们</a>
+    <a href="#">联系我们</a>
+    <a href="#">加入我们</a>
+  </div>
+</footer>
+
+
+
+
+    
+</body>
+</html>

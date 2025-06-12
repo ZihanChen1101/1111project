@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>深海</title>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     
+}
+    
+body {
+    font-family: "Segoe UI", "Microsoft YaHei", "Arial", sans-serif;
+    background: 
+        linear-gradient(rgba(245, 247, 250, 0.7), rgba(245, 247, 250, 0.7)),
+        url(背景图.png) no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+.work-detail-header {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  padding: 1.5rem 2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 10;
+}
+
+.back-home {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #e2e8f0;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  transition: all 0.2s ease;
+}
+
+.back-home:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateX(-2px);
+}
+
+.back-home svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.work-title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.work-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 60%;
+  width: 3px;
+  background: linear-gradient(to bottom, #3b82f6, #8b5cf6);
+  border-radius: 3px;
+}
+.picture {
+    margin: 0 auto;
+    text-align: center;
+    WIDTH: 100%;
+    max-width: 800px;
+    margin-top: 50px;
+}
+.picture img {
+    border: #e2e8f0 solid 1px;
+    border-radius: 24px;
+    height: 500px;
+    box-shadow: 0 4px 6px 6px rgba(0, 0, 0, 0.1);
+}
+.work-content-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.work-main-title {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.work-main-title h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.title-divider {
+  height: 3px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  border-radius: 3px;
+}
+
+.work-description {
+  line-height: 1.8;
+  color: #334155;
+}
+
+.work-description h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 1.5rem 0 1rem;
+  padding-left: 0.5rem;
+  border-left: 3px solid #3b82f6;
+}
+
+.work-description p {
+  margin-bottom: 1rem;
+  text-align: justify;
+  hyphens: auto;
+}
+
+@media (max-width: 768px) {
+  .work-content-container {
+    padding: 0 1rem;
+  }
+  
+  .work-main-title h2 {
+    font-size: 1.75rem;
+  }
+  
+  .title-divider {
+    max-width: 200px;
+  }
+}
+
+/* 页脚版权区 */
+.site-footer {
+    background: linear-gradient(to right, #3b82f6, #8b5cf6);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 12px 12px 0 0;
+    margin-top: 80px;
+}
+
+.footer-info p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-links a {
+    margin: 0 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: text-decoration 0.2s;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+</style>
+<body>
+<div class="work-detail-header" target="_self">
+  <a href="/" class="back-home">
+    <svg xmlns=index.html width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M19 12H5M12 19l-7-7 7-7"/>
+    </svg>
+    返回主页
+  </a>
+  <h1 class="work-title">《深海》详情</h1>
+</div>
+<div class="picture">
+    <img src="深海.jpg" alt="深海">
+</div>
+<div class="work-content-container">
+  <!-- 作品标题区域 -->
+  <div class="work-main-title">
+    <h2>深海</h2>
+    <div class="title-divider"></div>
+  </div>
+  
+  <!-- 作品描述区域 -->
+  <div class="work-description">
+       <h3>剧情简介</h3>
+    <p>一个叫参宿的小女孩，在父母离异后和父亲生活，却无法融入父亲再婚后的家庭。在一次全家出海旅行时，在夜晚的暴风雨中，参宿仿佛听到妈妈的呼唤，在半梦半醒间跳入海中去找妈妈。参宿落水后进入一片奇幻的海洋世界，来到“深海大饭店”，认识了南河船长，遇到了形形色色的海底生物。参宿希望找到妈妈，南河船长希望挣到很多钱，他们的愿望都能在“深海之眼”被满足。南河船长决定驾驶深海号带着参宿前往“深海之眼“”实现她的愿望，自此开启了他们独特的生命旅程...... </p>
+    
+    <h3>创作背景</h3>
+    <p>受《海底两万里》的影响，一直向往着大海的导演田晓鹏希望以创新为驱动力讲一个关于大海的原创故事，以充满新鲜感和奇幻感的全新表现形式，呈现一个不一样的大海。田晓鹏看到一幅鱼在云层中游动的画给了他灵感，海洋应该同天空一般，鱼在其中游动时，具有很多层次感与色彩的变化与流动的。他想藉此尝试新的动画风格，在动画制作领域打破美国、日本拥有独特优势的现状，实现中国动画全流程的探索与创新，通过技术创新与共享，提升中国动画的国际竞争力</p>
+    
+ 
+    <h3>影片风格</h3>
+    <p>《深海》通过“粒子水墨”塑造的视觉风格，打破了人们对中国风水墨动画效果水墨交融、润物无声的常规印象，以高饱和度、大色差、斑斓绚丽的色彩带来一种灵动、流淌的凌厉美感。《深海》以五彩斑斓的奇幻世界，表达出梦中极致的灿烂和现实灰暗的强烈反差。影片通过绚丽的光影、浓烈的色彩，扭转了大家对深海的恐惧，将传统印象中幽暗恐怖的深海幻化为唯美梦幻的世界。</p>
+
+  </div>
+</div>
+    <footer class="site-footer">
+  <div class="footer-info">
+    <p>© 2025 中国动漫综合服务平台 版权所有</p>
+  </div>
+  <div class="footer-links">
+    <a href="#">关于我们</a>
+    <a href="#">联系我们</a>
+    <a href="#">加入我们</a>
+  </div>
+</footer>
+
+
+
+
+    
+</body>
+</html>
